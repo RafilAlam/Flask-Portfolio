@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rafil Alam</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Hanken Grotesk' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Rafil Alam's personal website showcasing projects, skills, and interests in computer science.">
+    </head>
+    <body>
+        <main>
+            <nav id="navbar">
+                <div class="island left">
+                    <a class="navbtn btn med specialtxt" href="/"><i class="bi bi-code-slash"></i> Rafil</a>
+                </div>
+                <div class="island center">
+                    <a class="navbtn btn" href="/"><i class="bi bi-house"></i> Home</a>
+                    <a class="navbtn btn navselected" href="/projects"><i class="bi bi-archive"></i> My Projects</a>
+                    <a class="navbtn btn" href="/about"><i class="bi bi-file-earmark-person"></i> About Me</a>
+                </div>
+            </nav>
+            
+            <h1 id="projectsh1">What are you looking for?</h1>
+
+            <div class="grid">
+                <div id="projs" class="island">
+                    
+                    <div class="cardholder">
+                        <div class="profcard-m" onclick="window.location.href='/design';">
+                            <img class="cardimg-m" src="static/pencil.png">
+                            <p class="cardcontent-l specialtxt">User Interface & Experience</p>
+                        </div>
+                        <div class="profcard-m" onclick="window.location.href='/build';">
+                            <img class="cardimg-m" src="static/hammer.png">
+                            <p class="cardcontent-l specialtxt">Game & App Development</p>
+                        </div>
+                        <div class="profcard-m" onclick="window.location.href='/think';">
+                            <img class="cardimg-m" src="static/brain.png">
+                            <p class="cardcontent-l specialtxt">Algorithms & Problem Solving</p>
+                        </div>
+                        <div class="profcard-m" onclick="window.location.href='/share';">
+                            <img class="cardimg-m" src="static/heart.png">
+                            <p class="cardcontent-l specialtxt">Giving back to society</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
