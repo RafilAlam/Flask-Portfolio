@@ -11,9 +11,9 @@ def home():
 def projects():
     return render_template('projects.html')
 
-@app.route('/about')
+@app.route('/achievements')
 def about():
-    return render_template('about.html')
+    return render_template('achievements.html')
 
 @app.route('/design')
 def design():
@@ -30,6 +30,18 @@ def think():
 @app.route('/share')
 def share():
     return render_template('share.html')
+
+@app.route('/certification')
+def certification():
+    return render_template('certification.html')
+
+@app.route('/competitions')
+def competitions():
+    return render_template('competitions.html')
+
+@app.route('/testimonials')
+def testimonials():
+    return render_template('testimonials.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
